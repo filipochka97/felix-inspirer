@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Felix Inspirer</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon-16x16.png">
+  <link rel="stylesheet" href={{{ json mainCSS }}}></link>
+</head>
+
+<body>
+  <div id="root">
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background: #eeeeee;
+      }
+
+      m {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      ml {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: appear 2s ease-in-out 0s;
+      }
+
+      sp {
+        display: flex;
+      }
+
+      spi {
+        width: 20px;
+        height: 20px;
+        margin: 20px;
+        border-radius: 50%;
+        background: #e0e0e0;
+        animation: wave 1s ease-in-out 0s infinite alternate;
+      }
+
+      @keyframes wave {
+        0% {
+          transform: translateY(0px);
+          background: #e0e0e0;
+        }
+        50% {
+          transform: translateY(0px);
+          background: #e0e0e0;
+        }
+        100% {
+          transform: translateY(-70px);
+          background: #bbbbbb;
+        }
+      }
+
+      @keyframes appear {
+        0% {
+          opacity: 0;
+        }
+        75% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+
+    <m>
+      <ml>
+        <sp>
+          <spi style="animation-delay: 0s"></spi>
+          <spi style="animation-delay: 0.2s"></spi>
+          <spi style="animation-delay: 0.4s"></spi>
+          <spi style="animation-delay: 0.6s"></spi>
+          <spi style="animation-delay: 0.8s"></spi>
+        </sp>
+      </ml>
+    </m>
+
+  </div>
+  <script src={{{ json mainJS }}}></script>
+</body>
+
+</html>

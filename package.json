@@ -1,0 +1,17 @@
+{
+  "name": "felix-inspirer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd students/web && npm run development",
+    "api": "cd students/api && npm run development",
+    "db": "sudo service mongod start",
+    "start": "concurrent \"npm run server\" \"npm run api\" \"npm run db\""
+  },
+  "author": "filipochka97",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.0"
+  }
+}

@@ -1,6 +1,13 @@
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
+import combineSectionReducers from 'combine-section-reducers';
 
 import user from './user/user.reducer';
+import subject from './subject/subject.reducer';
 
-export default createStore(user, applyMiddleware(thunk));
+const reducer = combineSectionReducers({
+  user,
+  subject,
+});
+
+export default createStore(reducer, compose(applyMiddleware(thunk)));

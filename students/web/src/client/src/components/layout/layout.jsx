@@ -1,10 +1,10 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import Header from './components/header';
 import Footer from './components/footer';
 import Routes from '../routes';
 import './layout.styles';
 
-class Layout extends PureComponent {
+class Layout extends Component {
   render() {
     return (
       <main className="main">

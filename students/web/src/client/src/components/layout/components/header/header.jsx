@@ -1,11 +1,12 @@
 import React from 'react';
+import Navigation from '../navigation';
 import './header.styles.pcss';
 
 const Header = () => (
   <header className="header">
-    <span className="header__quote">
-      The future depends on what you do today.
-    </span>
+    <div className="header__navigation">
+      <Navigation />
+    </div>
   </header>
 );
 

@@ -45,7 +45,7 @@ class Users extends Component {
         }
         { !!usersList.length &&
           <div className="list__header list-header">
-            <div className="list-header__title">User</div>
+            <div className="list-header__title">Student</div>
             <div className="list-header__title">Email</div>
             <div className="list-header__button">
               <Button

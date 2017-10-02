@@ -41,6 +41,7 @@
     "react-datepicker": "0.53.0",
     "react-dom": "^16.0.0",
     "react-redux": "5.0.5",
+    "react-router": "^4.2.0",
     "react-router-dom": "4.1.2",
     "react-select": "1.0.0-rc.5",
     "redux": "3.7.2",

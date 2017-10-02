@@ -1,7 +1,7 @@
 export default {
-  getUsersList: state => state.usersList,
+  getUsersList: state => state.user.usersList,
   getUserById: (state, id) =>
-    state.usersList.find(user =>
+    state.user.usersList.find(user =>
       user._id === id,
     ),
 };

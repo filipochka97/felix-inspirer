@@ -13,6 +13,6 @@ insert_final_newline = true
 charset = utf-8
 
 # Indentation override for all JS under lib directory
-[*.{html,css,pcss,js}]
+[*.{html,css,pcss,js,jsx}]
 indent_style = space
 indent_size = 2
